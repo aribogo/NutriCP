@@ -1,14 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import Title from '../components/Title';
+import Footer from '../components/Footer';
+import FilledButton from '../components/FilledButton';
 
-const StepsScreen = () => {
-    return (
-    <View>
-        <Text>Passo a Passo</Text>
-    </View>
-    );
-};
 
 const styles = StyleSheet.create({});
 
-export default StepsScreen;
+export default function StepsScreen({navigation}) {
+    return (
+    <View >
+        <Title titleName="PASSO A PASSO"/>
+        <Footer height="big"/> 
+        <FilledButton navigation={navigation} buttonName="Instrumentos de Avaliação"/>
+    </View>
+    );
+};

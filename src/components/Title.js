@@ -23,8 +23,7 @@ const stylesTitle = StyleSheet.create({
         fontWeight: 'light',
         color: '#FCFFFF',
         textAlign: 'center',
-        marginTop: 30,
-        fontFamily: 'Arial',
+        marginTop: 30
       },
       styleDash: {
         height: 20,

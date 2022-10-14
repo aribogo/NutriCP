@@ -1,21 +1,13 @@
 import React from 'react';
-import AssessmentInstrumentsScreen from '../screens/AssessmentInstruments';
 import { StyleSheet, TouchableOpacity, Button, Text } from 'react-native';
 
 
 const FilledButton = (props) => {
+
     return (
         <Button
             style={stylesButton.buttonStyle}
-            navigation={navigation}
-            /* renderItem={({ item }) => {
-                return (
-                    <TouchableOpacity onPress={() => navigation.navigate('Assessment')}> 
-                    <AssessmentInstrumentsScreen result={item}/>
-                    </TouchableOpacity>
-                )
-            }*/
-            onPress={props.navigation.navigate('Assessment')}
+            onPress={() => props.navigation.navigate('Assessment')}
             title="Go to Details... again"
         >  
         </Button>

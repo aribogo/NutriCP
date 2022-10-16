@@ -16,20 +16,21 @@ const Title = (props) => {
 const stylesTitle = StyleSheet.create({
     background: {
         backgroundColor: '#1471AB',
-        height: 100
+        height: '25%',
+        maxWidth: '100%',
     },
     baseText: {
         fontSize: 40,
         fontWeight: 'light',
         color: '#FCFFFF',
         textAlign: 'center',
-        marginTop: 30
+        marginTop: '30%'
       },
       styleDash: {
-        height: 20,
+        height: '20%',
         justifyContent: 'space-between',
         backgroundColor: '#7EB4B0', 
-        marginTop: 20,
+        marginTop: '20%',
         bottom: 0,
     }
 });

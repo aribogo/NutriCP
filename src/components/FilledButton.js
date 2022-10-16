@@ -8,7 +8,7 @@ const FilledButton = (props) => {
         <Button
             style={stylesButton.buttonStyle}
             onPress={() => props.navigation.navigate('Assessment')}
-            title="Go to Details... again"
+            title="INSTRUMENTOS DE AVALIAÇÃO"
         >  
         </Button>
     );

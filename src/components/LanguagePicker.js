@@ -44,7 +44,6 @@ const LanguagePicker = () => {
       <Pressable
         onPress={() => setModalVisible(true)}
       >
-        //displays the current app language
         <Text>{i18n.language}</Text>
       </Pressable>
     </View>

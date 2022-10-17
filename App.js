@@ -1,15 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Dimensions } from 'react-native';
 import StepsScreen from './src/screens/StepsScreen';
 import AssessmentInstrumentsScreen from './src/screens/AssessmentInstruments';
-import { useTranslation } from "react-i18next";
-import LanguagePicker from "./src/components/LanguagePicker";
 import "./i18n.config";
-
-//import * as Font from 'expo-font';
-//import useFonts from './useFonts';
-//import AppLoading from 'expo-app-loading';
-
 
 const Stack = createNativeStackNavigator();
 

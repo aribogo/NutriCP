@@ -11,16 +11,12 @@ const styles = StyleSheet.create({});
 
 export default function StepsScreen({ navigation }) {
 
-    const { translation } = useTranslation();
+    const { t } = useTranslation();
     return (
         <View>
-            <LanguagePicker />
-            <Button title='teste' onPress={() => Alert.alert(translation("stepByStep"))} />
-            <Title titleName="PASSO A PASSO" />
+            <Title titleName= {t("stepByStep")} />
             <Footer height="big" />
             <FilledButton navigation={navigation} buttonName="Instrumentos de Avaliação" />
         </View>
     );
 };
-
-  //

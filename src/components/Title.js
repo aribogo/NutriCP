@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { moderateScale, normalize } from '../../utils/screenResizing';
+
 
 const Title = (props) => {
     return(
         <View style={stylesTitle.background}>
-            <Text style={stylesTitle.baseText}>
+            <Text style={stylesTitle.baseText}  adjustFontSizeToFit>
             {props.titleName}
             </Text>
             <View style={stylesTitle.styleDash}>
@@ -16,21 +18,22 @@ const Title = (props) => {
 const stylesTitle = StyleSheet.create({
     background: {
         backgroundColor: '#1471AB',
-        height: '25%',
-        maxWidth: '100%',
+        height: moderateScale(90),
+        maxWidth: moderateScale(400),
     },
     baseText: {
-        fontSize: 40,
+        fontSize: moderateScale(40),
         fontWeight: 'light',
         color: '#FCFFFF',
         textAlign: 'center',
-        marginTop: '30%'
+        marginTop: moderateScale(10)
       },
       styleDash: {
-        height: '20%',
+        height: moderateScale(18),
+        maxWidth: moderateScale(400),
         justifyContent: 'space-between',
         backgroundColor: '#7EB4B0', 
-        marginTop: '20%',
+        marginTop:  moderateScale(14),
         bottom: 0,
     }
 });

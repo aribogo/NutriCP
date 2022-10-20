@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { moderateScale } from '../../utils/screenResizing';
+import { scale } from '../../utils/screenResizing';
+
 
 const Footer = (props) => {
     const height = props.height;
@@ -21,15 +22,18 @@ const Footer = (props) => {
 const stylesFooter = StyleSheet.create({
     smallerHeight: {
         backgroundColor: '#1471AB',
-        height: 100,
+        height: scale(100),
         position: 'relative',
-        bottom: moderateScale(-410)
+        bottom: scale(-400)
     },
     biggerHeight: {
         backgroundColor: '#1471AB',
-        height: moderateScale(200),
-        position: 'relative',
-        bottom: moderateScale(-300)
+        height: scale(300),
+        padding: scale(100),
+        flex: 1,
+        position: 'fixed',
+        justifyContent: 'flex-end',
+        top: scale(300)
     }
 });
 

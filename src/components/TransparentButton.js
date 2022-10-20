@@ -1,5 +1,5 @@
-import React, {ReactElement, useState } from 'react';
-import { StyleSheet, TouchableOpacity, Text, View,FlatList } from 'react-native';
+import React, { ReactElement, useState } from 'react';
+import { StyleSheet, TouchableOpacity, Text, View, FlatList } from 'react-native';
 import { Icon } from '@rneui/base';
 import { scale } from '../../utils/screenResizing';
 
@@ -11,7 +11,7 @@ const TransparentButton = (props) => {
         setVisible(!visible);
     };
 
-    const renderDropdown = ({value}) => {
+    const renderDropdown = ({ value }) => {
         if (visible) {
             return (
                 <Text style={stylesButton.contentText}>
@@ -21,24 +21,24 @@ const TransparentButton = (props) => {
         }
     };
 
-    const renderItem = ({data}) => {
+    const renderItem = (item) => {
         <TouchableOpacity
-        style={stylesButton.button}
-        onPress={toggleDropdown}
-    >
-        <Text style={stylesButton.buttonText}>{data.label}</Text>
-        <Icon type='font-awesome' name='fa chevron-down' style={stylesButton.fa}/>
-        {renderDropdown(data.value)}
-    </TouchableOpacity>
+            style={stylesButton.button}
+            onPress={toggleDropdown}
+        >
+            <Text style={stylesButton.buttonText}>{item.label}</Text>
+            <Icon type='font-awesome' name='fa chevron-down' style={stylesButton.fa} />
+            {renderDropdown(item.value)}
+        </TouchableOpacity>
     }
 
     return (
-            <View >
+        <View >
             <FlatList
                 data={props.data}
-              renderItem={renderItem(props.data)}
+                renderItem={({item}) => renderItem(item)}
             />
-          </View>
+        </View>
     );
 };
 

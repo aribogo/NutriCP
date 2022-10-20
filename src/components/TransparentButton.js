@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {ReactElement, useState } from 'react';
 import { StyleSheet, TouchableOpacity, Text, View,FlatList } from 'react-native';
 import { Icon } from '@rneui/base';
 import { scale } from '../../utils/screenResizing';
@@ -36,7 +36,7 @@ const TransparentButton = (props) => {
             <View >
             <FlatList
                 data={props.data}
-              renderItem={renderItem(props)}
+              renderItem={renderItem(props.data)}
             />
           </View>
     );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { StyleSheet, View } from 'react-native';
 import Title from '../components/Title';
 import Footer from '../components/Footer';
@@ -20,12 +20,14 @@ const styles = StyleSheet.create({});
 
 export default function StepsScreen({ navigation }) {
 
+    const [selected, setSelected] = useState(undefined);
+
     const { t } = useTranslation();
     return (
         <View>
             <Title titleName={t("stepByStep")} />
             <FilledButton navigation={navigation} buttonName="Instrumentos de Avaliação" />
-            <TransparentButton data={data}/>
+            <TransparentButton data={data} onSelect={setSelected}/>
             <Footer height="big" />
         </View>
     );

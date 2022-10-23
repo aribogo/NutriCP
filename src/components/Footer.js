@@ -31,7 +31,7 @@ const stylesFooter = StyleSheet.create({
         height: scale(300),
         padding: scale(100),
         flex: 1,
-        position: 'fixed',
+        position: 'relative',
         justifyContent: 'flex-end',
         top: scale(300)
     }

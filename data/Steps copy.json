@@ -1,0 +1,38 @@
+{
+  "stepsTitle": "PASSO A PASSO",
+  "buttons": [
+    { "id" : "1", "label": "APRESENTAÇÃO", "screenName": "", "contentPath": "../../data/AssessmentInstrumentInfo.json" },
+    {
+      "id" : "2",
+      "label": "INSTRUMENTOS DE AVALIAÇÃO",
+      "screenName": "AssessmentInstruments",
+      "contentPath": "../../data/AssessmentInstrumentInfo.json"
+    },
+    { "id" : "3", "label": "AVALIAÇÃO NUTRICIONAL", "screenName": "", "contentPath": "../../data/AssessmentInstrumentInfo.json" },
+    {
+      "id" : "4",
+      "label": "MANEJO DE SINTOMAS EM CUIDADOS PALIATIVOS",
+      "screenName": "AssessmentInstruments",
+      "contentPath": "../../data/AssessmentInstrumentInfo.json"
+    },
+    {
+      "id" : "5",
+      "label": "ASPECTOS BIOÉTICOS PARA\nTOMADA DE DECISÃO\n",
+      "screenName": "AssessmentInstruments",
+      "contentPath": "../../data/AssessmentInstrumentInfo.json"
+    },
+    {
+      "id" : "6",
+      "label": "SUPORTE NUTRICIONAL EM \nCUIDADOS PALIATIVO\n",
+      "screenName": "AssessmentInstruments",
+      "contentPath": "../../data/AssessmentInstrumentInfo.json"
+    },
+    {
+      "id" : "7",
+      "label": "ACOMPANHAMENTO NUTRICIONAL",
+      "screenName": "AssessmentInstruments",
+      "contentPath": "../../data/AssessmentInstrumentInfo.json"
+    },
+    { "id" : "8", "label": "REFERÊNCIAS", "screenName": "", "contentPath": "../../data/AssessmentInstrumentInfo.json" }
+  ]
+}

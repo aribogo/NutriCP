@@ -22,11 +22,12 @@ const stylesTitle = StyleSheet.create({
         maxWidth: moderateScale(400),
     },
     baseText: {
-        fontSize: moderateScale(40),
+        fontSize: moderateScale(25),
         fontWeight: 'light',
         color: '#FCFFFF',
         textAlign: 'center',
-        marginTop: moderateScale(10)
+        marginTop: moderateScale(10),
+        flexWrap: 'wrap'
       },
       styleDash: {
         height: moderateScale(18),

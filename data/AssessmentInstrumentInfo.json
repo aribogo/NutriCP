@@ -1,0 +1,68 @@
+{
+  "label": "Assessment",
+  "id": "1",
+  "explain": "Para você, nutricionista, ao receber uma pessoa idosa, é preciso identificar se é necessária — e qual será a abordagem dos CP.  Seguem alguns instrumentos sob quatro “aspectos-guias” (é hora de expandir o conhecimento,  eles merecem o melhor):",
+  "subtopics": [
+    {
+      "label": "Elegibilidade em Cuidados Paliativos",
+      "content": "Escolha um dos instrumentos utilizados para elegibilidade em CP. Dentre os mais utilizados, temos: ",
+      "examples": [
+        {
+          "title": "Palliative Care Screening Tool (PCST)",
+          "link": "kffkfgkk",
+          "isInternal": false
+        },
+        {
+          "title": "Supportive and Palliative Care Indicators Tool (SPICT)",
+          "link": "kffkfgkk",
+          "isInternal": false
+        },
+        { "title": "Necessidades paliativas (NECPAL -BR)",
+         "link": "kffkfgkk",
+         "isInternal": true }
+      ]
+    },
+    {
+        "label": "Avaliação funcional em Cuidados Paliativoss",
+        "content": "A avaliação funcional em Cuidados Paliativos é fundamental para a vigilância da evolução da doença, constituindo um elemento valioso na tomada de decisões, prognóstico, diagnóstico e prevenção de efeitos adversos associados ao declínio funcional. Você deve escolher um dos instrumentos utilizados para avaliação funcional em CP. Dentre os mais utilizados, temos:",
+        "examples": [
+           {"title": "Karnofsky Performance Scale (KPS)",
+           "link": "kffkfgkk",
+           "isInternal": false},
+           {"title": "Eastern Cooperative Oncolog y Group Perfomance Status Scale (ECOG Perfomance Status)",
+           "link": "kffkfgkk",
+           "isInternal": false},
+           {"title": "Palliative Performance Scale (PPS)",
+           "link": "kffkfgkk",
+           "isInternal": true}
+        ]
+        
+     },
+     {
+        "label": "Sintomas em Cuidados Paliativos",
+        "content": "Na assistência a esses pacientes, a aplicação de escalas é um método de avaliação muito utilizado para um resultado personalizado, individual e único. Com pontuações que quantificam e documentam a necessidade de intervenção. Dentre as escalas existentes, a mais utilizada é:",
+        "examples": [
+           {"title": "Edmonton Symptom Assessment System (ESAS-r)",
+           "link": "kffkfgkk",
+           "isInternal": false}
+        ]
+        
+     },
+     {
+        "label": "Prognóstico em Cuidados Paliativos",
+        "content": "“Prognosticar” significa antecipar possíveis desfechos de um tratamento ou doença, com bases no conhecimento médico e na experiência. Ao elaborar um plano de cuidados efetivo é importantíssimo considerar o custo-benefício das alternativas. Porém, em CP não há um consenso sobre a melhor maneira de se avaliar o prognóstico em pacientes geriátricos, sendo um constante desafio a indicação oportuna da transição do cuidado terapêutico para o cuidado exclusivamente paliativo. Dentre os instrumentos mais utilizados, temos: ",
+        "examples": [
+           {"title": "Burden Of Ilbess Score of Elderly Person (BISEP)",
+           "link": "kffkfgkk",
+           "isInternal": true},
+           {"title": "Índedice de comorbidades de Charlson",
+           "link": "kffkfgkk",
+           "isInternal": false},
+           {"title": "Palliative Prognostic Index (PPI)",
+           "link": "kffkfgkk",
+           "isInternal": true}
+        ]
+        
+     }
+  ]
+}

@@ -5,14 +5,15 @@ import { scale } from '../../utils/screenResizing';
 
 
 const FilledButton = (props) => {
-
+    var data = props.data;
+    console.log("CHEGUEI AQUI")
     return (
         <><Button
             title={props.buttonName}
             titleStyle={stylesButton.baseText}
             buttonStyle={stylesButton.buttonStyle}
             containerStyle={stylesButton.containerStyle}
-            onPress={() => props.navigation.navigate('Assessment')} /></>
+            onPress={() => props.navigation.navigate(props.screen, {data})} /></>
     );
 };
 

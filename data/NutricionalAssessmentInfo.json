@@ -1,0 +1,99 @@
+{
+    "label": "NutritionalAssessment",
+    "id": "1",
+    "explain": "A avaliação nutricional deve ser realizada respeitando os princípios da abordagem dos cuidados paliativos, conforme a situação do paciente e o estágio da doença de base. Considerar essencialmente seu conforto e autonomia e auxiliando no manejo de sintomas relacionados à alimentação. Dessa forma, é imprescindível estabelecer a pertinência do método de avaliação nutricional a ser utilizado, não devendo ser empregado em caso de futilidade ou desconforto físico, ou emocional para o paciente. Em pacientes em cuidados paliativos, a avaliação do EN precede qualquer conduta nutricional, devendo incluir:",
+    "subtopics": [
+      {
+        "label": "Saiba mais sobre os métodos de avaliação nutricional",
+        "content": "Em pacientes em cuidados paliativos, a avaliação do EN precede qualquer conduta nutricional, devendo incluir:",
+        "examples": [
+          {
+            "title": "Triagem Nutricional",
+            "link": "kffkfgkk",
+            "isInternal": true
+          },
+          {
+            "title": "Avaliação da história clínica e dietética",
+            "link": "kffkfgkk",
+            "isInternal": true
+          },
+          { "title": "Avaliação antropométrica",
+           "link": "kffkfgkk",
+           "isInternal": true },
+           { "title": "Força de preensão palmar",
+           "link": "kffkfgkk",
+           "isInternal": true },
+           { "title": "Semiologia nutricional",
+           "link": "kffkfgkk",
+           "isInternal": true }
+        ]
+      },
+      {
+          "label": "Triagem Nutricional",
+          "content": "O primeiro passo no processo de atendimento nutricional é o rastreamento do risco nutricional apresentado pelo indivíduo utilizando uma ferramenta de triagem validada. Dentre as ferramentas de utilizadas em idosos em cuidados paliativos, temos:",
+          "examples": [
+             {"title": " Mini Nutritional Assessment Short-Form (MNA-SF) (Mini Avaliação Nutricional Reduzida - MNA-SF)",
+             "link": "kffkfgkk",
+             "isInternal": true},
+             {"title": ". Avaliação Subjetiva Global Produzida pelo próprio Paciente (ASG-PPP)",
+             "link": "kffkfgkk",
+             "isInternal": false}
+          ]
+          
+       },
+       {
+          "label": "Avaliação da história clínica e dietética",
+          "content": "Na avaliação nutricional, você deve estar atento ao histórico clínico do paciente. Observar precocemente quais os sinais e sintomas relatados que podem se relacionar com baixo consumo alimentar e, consequentemente, déficit no EN, tais como: xerostomia, mucosite, disfagia, náuseas, vômitos, dispneia, diarreia, constipação, dor e distensão abdominal, saciedade precoce, anorexia, entre outros. \n Além disso, deve coletar informações da história dietética, incluindo: o padrão alimentar global, aversões, preferências e intolerâncias alimentares; número e horário de refeições; apetite; dificuldade na mastigação e deglutição; modificações na consistência dos alimentos; mudanças recentes na prática alimentar e uso de suplementos nutricionais.",
+          "examples": [
+          ]
+          
+       },
+       {
+          "label": "Avaliação antropométrica",
+          "content": "Em cuidados paliativos, a antropometria deve ser aplicada desde que não causem desconforto ou constrangimento aos pacientes. Aferições de peso, altura, circunferências e dinamometria manual são úteis para diagnóstico e acompanhamento nutricional, consideradas sensíveis para identificar comprometimento nutricional em pacientes oncológicos em cuidados paliativos, além de estarem relacionadas a resultados clínicos adversos nessa população.",
+          "examples": [
+             {"title": "Índice de massa corporal",
+             "link": "kffkfgkk",
+             "isInternal": true},
+             {"title": "Circunferência do braço",
+             "link": "kffkfgkk",
+             "isInternal": false},
+             {"title": "Circunferência da panturrilha",
+             "link": "kffkfgkk",
+             "isInternal": true}
+          ]
+          
+       },
+       {
+        "label": "Força de preensão palmar (FPP)",
+        "content": "Método de avaliação simples, rápido e capaz de verificar a função muscular é a FPP, pode ser realizada com auxílio de um dinamômetro. A função muscular, ao contrário das medidas antropométricas, modifica-se rapidamente, mostrando, assim, a evolução do idoso, ajudando a avaliar se a terapêutica proposta está atendendo aos objetivos.\n Alguns estudos demonstram a superioridade da FPP em detectar pequenas modificações do Estado Nutricional em comparação a outras variáveis antropométricas.",
+        "examples": [
+           {"title": "(Clique aqui e tenha acesso ao texto integral)",
+           "link": "kffkfgkk",
+           "isInternal": false}
+        ]
+        
+     },
+     {
+        "label": "Semiologia nutricional",
+        "content": "O exame físico é de fundamental importância para identificar sinais e sintomas clínicos que nortearão a conduta nutricional individualizada. Em diversas circunstâncias, o exame físico é o único elemento com que o nutricionista pode contar para a realização da intervenção nutricional.",
+        "examples": [
+           {"title": "Avaliação de perda de gordura subcutânea",
+           "link": "kffkfgkk",
+           "isInternal": true},
+           {"title": "Avaliação de perda de massa muscular",
+           "link": "kffkfgkk",
+           "isInternal": true},
+           {"title": "Avaliação do edema",
+           "link": "kffkfgkk",
+           "isInternal": true},
+           {"title": "Classificação da ascite",
+           "link": "kffkfgkk",
+           "isInternal": true}
+
+        ]
+        
+     }
+    ]
+  }
+  

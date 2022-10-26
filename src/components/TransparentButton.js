@@ -6,122 +6,60 @@ import {
   View,
   FlatList,
   SafeAreaView,
-  StatusBar,
 } from "react-native";
 import { Icon } from "@rneui/base";
 import { scale } from "../../utils/screenResizing";
+import Container from "./Container";
 
 const TransparentButton = (props) => {
-  const DropdownButton = useRef();
-  const [visible, setVisible] = useState(false);
-  const [selected, setSelected] = useState(null);
-  const [dropdownTop, setDropdownTop] = useState(0);
+
   const [selectedId, setSelectedId] = useState(null);
-  /*
-    const toggleDropdown = () => {
-        visible ? setVisible(false) : openDropdown();
-    };
-**/
 
-  /*
-    const openDropdown = () => {
-        DropdownButton.current.measure((_fx, _fy, _w, h, _px, py) => {
-            setDropdownTop(py - h);
-        });
-    }
-*/
-
-  const Item = ({ item, onPress, backgroundColor, textColor }) => (
+  const Item = ({ item, onPress}) => (
     <TouchableOpacity onPress={onPress} style={[stylesButton.button]}>
       <Text style={stylesButton.buttonText}>{item.label}</Text>
       <Icon type="font-awesome" name="chevron-down" style={stylesButton.icon} />
-      {renderDropdown(item)}
     </TouchableOpacity>
   );
-  const renderDropdown = (item) => {
-    console.log(item.label);
 
-    if (item.id == selectedId) {
-      return <Text style={stylesButton.contentText}>{item.value}</Text>;
+  const renderDropdown = (item) => {
+    if (item.label == selectedId) {
+      return <Container content={item.content}  examples={item.examples} />;
     }
   };
 
-  /*
-        const renderItem = (item) => {
-            return (
-                <TouchableOpacity
-                    ref={DropdownButton}
-                    style={stylesButton.button}
-                    onPress={() => {setVisible(!visible), toggleDropdown, item.visible = true }}
-                >
-                    <Text style={stylesButton.buttonText}>{item.label}</Text>
-                    <Icon type='font-awesome' name='chevron-down' style={stylesButton.icon} />
-                    {renderDropdown(item)}
-                </TouchableOpacity>
-            );
-        }
-*/
 
   const renderItem = ({ item }) => {
     return (
+      <View>
       <Item
         item={item}
         onPress={() => {
-          if (item.id === selectedId) {
-            setSelectedId(0);
+          if (item.label === selectedId) {
+            setSelectedId("0");
           } else {
-            setSelectedId(item.id);
+            setSelectedId(item.label);
           }
         }}
       />
+      {renderDropdown(item)}
+      </View>
     );
   };
 
-  /*
-const renderItem = ({ item }) => {
-    const backgroundColor = item.id === selectedId ? "#6e3b6e" : "#f9c2ff";
-    const color = item.id === selectedId ? 'white' : 'black';
-
-    return (
-      <Item
-        item={item}
-        onPress={() => setSelectedId(item.id)}
-        backgroundColor={{ backgroundColor }}
-        textColor={{ color }}
-      />
-    );
-  };
-*/
-  /*
-        return (
-
-            <FlatList
-                data={props.data}
-                renderItem={({ item }) => renderItem(item)}
-                keyExtractor={(item, index) => index.toString()}
-            />
-
-        );
-
-        */
 
   return (
     <SafeAreaView>
       <FlatList
         data={props.data}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.label}
         extraData={selectedId}
       />
+      <Text>{props.label}</Text>
     </SafeAreaView>
   );
 };
-
-//style={[styles.dropdown, { top: dropdownTop }]}
-//data={data}
-// keyExtractor={(item, index) => index.toString()}
-
-// type="outline"
 
 const stylesButton = StyleSheet.create({
   button: {
@@ -150,22 +88,6 @@ const stylesButton = StyleSheet.create({
     color: "#7EB4B0",
     width: scale(20),
     alignSelf: "flex-start",
-    // left: scale(10)
-  },
-});
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
-  },
-  item: {
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
-  },
-  title: {
-    fontSize: 32,
   },
 });
 

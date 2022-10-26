@@ -32,7 +32,7 @@ function App() {
             fontSize: 28,
           }
         }} />
-         <Stack.Screen name="Assessment" component={AssessmentInstrumentsScreen} options={{
+         <Stack.Screen name="AssessmentInstruments" component={AssessmentInstrumentsScreen} options={{
           title: 'Nutri CP', headerTitleStyle: {
             fontWeight: 'bold',
             color: '#1471AB',

@@ -1,12 +1,13 @@
 {
   "stepsTitle": "PASSO A PASSO",
   "buttons": [
-    { "id" : "1", "label": "APRESENTAÇÃO", "screenName": "", "contentPath": "../../data/AssessmentInstrumentInfo.json" },
+    { "id" : "1", "label": "APRESENTAÇÃO", "screenName": "Presentation", "contentPath": "../../data/Presentation.json" },
     {
       "id" : "2",
       "label": "INSTRUMENTOS DE AVALIAÇÃO",
       "screenName": "AssessmentInstruments",
       "contentPath": "../../data/AssessmentInstrumentInfo.json"
-    }
+    },
+    { "id" : "3", "label": "AVALIAÇÃO NUTRICIONAL", "screenName": "NutritionalAssessment", "contentPath": "../../data/AssessmentInstrumentInfo.json" }
   ]
 }

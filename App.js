@@ -1,39 +1,41 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Dimensions } from 'react-native';
 import StepsScreen from './src/screens/StepsScreen';
-import AssessmentInstrumentsScreen from './src/screens/AssessmentInstruments';
+import AssessmentInstrumentsScreen from './src/screens/AssessmentInstrumentsScreen';
+import PresentationScreen from './src/screens/PresentationScreen';
+import NutritionalAssessmentScreen from './src/screens/NutritionalAssessmentScreen';
 import "./i18n.config";
 
 const Stack = createNativeStackNavigator();
 
 function App() {
 
-  /* const LoadFonts = async () => {
-     await useFonts();
-   }; 
-  if (!IsReady) {
-     return (
-       <AppLoading
-         startAsync={LoadFonts}
-         onFinish={() => SetIsReady(true)}
-         onError={() => {}}
-       />
-     );
-   } */
-
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Steps" component={StepsScreen} options={{
-          title: 'Nutri CP', headerTitleStyle: {
+          title: 'NutriCP', headerTitleStyle: {
             fontWeight: 'bold',
             color: '#1471AB',
             fontSize: 28,
           }
         }} />
          <Stack.Screen name="AssessmentInstruments" component={AssessmentInstrumentsScreen} options={{
-          title: 'Nutri CP', headerTitleStyle: {
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+         <Stack.Screen name="Presentation" component={PresentationScreen} options={{
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+           <Stack.Screen name="NutritionalAssessment" component={NutritionalAssessmentScreen} options={{
+          title: 'NutriCP', headerTitleStyle: {
             fontWeight: 'bold',
             color: '#1471AB',
             fontSize: 28,

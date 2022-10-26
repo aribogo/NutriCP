@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { moderateScale, normalize } from '../../utils/screenResizing';
+import { moderateScale } from '../../utils/screenResizing';
 
 
 const Title = (props) => {

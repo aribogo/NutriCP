@@ -3,53 +3,38 @@ import { StyleSheet, View, FlatList, TouchableOpacity } from "react-native";
 import Title from "../components/Title";
 import Footer from "../components/Footer";
 import FilledButton from "../components/FilledButton";
-import LanguagePicker from "../components/LanguagePicker";
-import { useTranslation } from "react-i18next";
-import TransparentButton from "../components/TransparentButton";
-import { AssessmentInstrumentInfo } from "../../data/choncho";
+import {
+  AssessmentInstrumentInfo,
+  NutritionalAssessmentInfo,
+  Presentation
+} from "../../data/jsonParser";
 
 const titleInfo = require("../../data/Steps.json");
 
-const styles = StyleSheet.create({});
-
 export default function StepsScreen({ navigation }) {
-
-  const [selectedId, setSelectedId] = useState("0");
-
   const renderItem = ({ item }) => {
-    var tela;
+    var jsonData;
     switch (item.id) {
       case "1":
-        tela = AssessmentInstrumentInfo;
+        jsonData = Presentation;
         break;
       case "2":
-        tela = AssessmentInstrumentInfo;
+        jsonData = AssessmentInstrumentInfo;
+        break;
+      case "3":
+        jsonData = NutritionalAssessmentInfo;
         break;
       default:
-        tela = AssessmentInstrumentInfo;
+        jsonData = AssessmentInstrumentInfo;
     }
 
     return (
-      
-      <TouchableOpacity 
-      onPress ={() => {
-        if (item.label === selectedId) {
-          console.log(selectedId)
-          setSelectedId("0");
-        } else {
-          setSelectedId(item.label);
-          console.log("AQUI");
-          console.log(selectedId)
-        }
-        
-      }}>
       <FilledButton
         navigation={navigation}
         buttonName={item.label}
         screen={item.screenName}
-        data={tela}
+        data={jsonData}
       />
-      </TouchableOpacity>
     );
   };
 

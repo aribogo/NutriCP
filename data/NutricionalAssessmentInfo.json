@@ -1,6 +1,8 @@
 {
     "label": "NutritionalAssessment",
-    "id": "1",
+    "id": "3",
+    "mainTitle": "AVALIAÇÃO NUTRICIONAL",
+    "mainButtonLabel": "Saiba mais sobre os métodos de avaliação nutricional", 
     "explain": "A avaliação nutricional deve ser realizada respeitando os princípios da abordagem dos cuidados paliativos, conforme a situação do paciente e o estágio da doença de base. Considerar essencialmente seu conforto e autonomia e auxiliando no manejo de sintomas relacionados à alimentação. Dessa forma, é imprescindível estabelecer a pertinência do método de avaliação nutricional a ser utilizado, não devendo ser empregado em caso de futilidade ou desconforto físico, ou emocional para o paciente. Em pacientes em cuidados paliativos, a avaliação do EN precede qualquer conduta nutricional, devendo incluir:",
     "subtopics": [
       {

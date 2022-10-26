@@ -1,7 +1,8 @@
 {
-  "label": "Assessment",
-  "id": "1",
-  "explain": "Para você, nutricionista, ao receber uma pessoa idosa, é preciso identificar se é necessária — e qual será a abordagem dos CP.  Seguem alguns instrumentos sob quatro “aspectos-guias” (é hora de expandir o conhecimento,  eles merecem o melhor):",
+  "label": "AssessmentInstruments",
+  "id": "2",
+  "mainTitle": "INSTRUMENTOS DE AVALIAÇÃO",
+  "explain": "Para você, nutricionista, ao receber uma pessoa idosa, é preciso identificar se é necessária — e qual será a abordagem dos CP.  Seguem alguns instrumentos sob quatro “aspectos-guias”:",
   "subtopics": [
     {
       "label": "Elegibilidade em Cuidados Paliativos",

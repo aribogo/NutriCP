@@ -2,7 +2,6 @@ import { StyleSheet, Text, ScrollView } from "react-native";
 import { scale } from "../../utils/screenResizing";
 
 const Explain = (props) => {
-  console.log(props)
   return (
     <ScrollView 
     style={styles.explain}

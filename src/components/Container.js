@@ -1,15 +1,35 @@
-import {
-  StyleSheet,
-  Text,
-  ScrollView,
-} from "react-native";
+import { StyleSheet, Text, ScrollView, View, Link } from "react-native";
 import { scale } from "../../utils/screenResizing";
 
 const Container = (props) => {
-  console.log(props);
+
+  const ShowExamplesByType = ({ examples }) => {
+    
+    for (const example of examples) {
+      if (example.isInternal == true) {
+        console.log("Aqui example 1");
+        return (<View
+          >
+            {examples.title}
+          </View>)
+        
+      } else {
+        console.log("Aqui example 2");
+        return (<Text
+          >
+            {examples.title}
+          </Text>)
+      }
+    }
+  };
+
   return (
-    <ScrollView style={stylesContainer.container} contentContainerStyle={{ minHeight: '170%' }}>
+    <ScrollView
+      style={stylesContainer.container}
+      contentContainerStyle={{ minHeight: "170%" }}
+    >
       <Text style={stylesContainer.contentText}>{props.content}</Text>
+      <ShowExamplesByType examples={props.examples}></ShowExamplesByType>
     </ScrollView>
   );
 };
@@ -28,7 +48,7 @@ const stylesContainer = StyleSheet.create({
     color: "#0B3F60",
     textAlign: "justify",
     marginLeft: scale(10),
-      marginRight: scale(10)
+    marginRight: scale(10),
   },
 });
 

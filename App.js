@@ -4,6 +4,7 @@ import StepsScreen from './src/screens/StepsScreen';
 import AssessmentInstrumentsScreen from './src/screens/AssessmentInstrumentsScreen';
 import PresentationScreen from './src/screens/PresentationScreen';
 import NutritionalAssessmentScreen from './src/screens/NutritionalAssessmentScreen';
+import NutriotionalAssessment2Screen from './src/screens/NutrtionalAssessmetScreen2';
 import "./i18n.config";
 
 const Stack = createNativeStackNavigator();
@@ -35,6 +36,13 @@ function App() {
           }
         }} />
            <Stack.Screen name="NutritionalAssessment" component={NutritionalAssessmentScreen} options={{
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+           <Stack.Screen name="NutritionalAssessment2" component={NutriotionalAssessment2Screen} options={{
           title: 'NutriCP', headerTitleStyle: {
             fontWeight: 'bold',
             color: '#1471AB',

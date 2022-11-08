@@ -10,11 +10,12 @@ export default function NutritionalAssessmentScreen(props) {
     <View>
       <Title titleName={props.route.params.data.mainTitle} />
       <Explain data={props.route.params.data.explain} />
+      <View></View>
       <FilledButton
        navigation={props.navigation}
        buttonName={props.route.params.data.mainButtonLabel}
-       screen={"AssessmentInstruments"}
-       data={props.route.params.data.subtopics}
+       screen={"NutritionalAssessment2"}
+       data={props.route.params.data}
         />
       <Footer height="small" />
     </View>

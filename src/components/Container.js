@@ -3,24 +3,17 @@ import { scale } from "../../utils/screenResizing";
 
 const Container = (props) => {
 
-  const ShowExamplesByType = ({ examples }) => {
-    
-    for (const example of examples) {
-      if (example.isInternal == true) {
-        console.log("Aqui example 1");
-        return (<View
-          >
-            {examples.title}
-          </View>)
-        
-      } else {
-        console.log("Aqui example 2");
-        return (<Text
-          >
-            {examples.title}
-          </Text>)
-      }
-    }
+  function ShowExamplesByType(examples) {
+    examples.map(() => (example) => 
+      <Examples example={example}/>
+    );
+  };
+
+  const Examples = ({ example }) => {
+    return (<View>
+      {this.isInternal == true? <Text>botão</Text>: <Text>link</Text> }
+      {example.title}
+      </View>);
   };
 
   return (
@@ -29,7 +22,7 @@ const Container = (props) => {
       contentContainerStyle={{ minHeight: "170%" }}
     >
       <Text style={stylesContainer.contentText}>{props.content}</Text>
-      <ShowExamplesByType examples={props.examples}></ShowExamplesByType>
+      {ShowExamplesByType(props.examples)}
     </ScrollView>
   );
 };

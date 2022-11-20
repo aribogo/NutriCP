@@ -12,7 +12,7 @@
             "isInternal": true
           },
           {
-            "title": "ASPECTOS COS NA TERMINALIDADE",
+            "title": "ASPECTOS CONSIDERADOS NA TERMINALIDADE",
             "link": "kffkfgkk",
             "isInternal": true
           },
@@ -23,46 +23,6 @@
            "link": "kffkfgkk",
            "isInternal": true }
         ]
-      },
-      {
-          "label": "PRINCÍPIOS DA BIOÉTICA",
-          "content": "O primeiro passo no processo de atendimento nutricional é o rastreamento do risco nutricional apresentado pelo indivíduo utilizando uma ferramenta de triagem validada. Dentre as ferramentas de utilizadas em idosos em cuidados paliativos, temos:",
-          "examples": [
-             {"title": " Mini Nutritional Assessment Short-Form (MNA-SF) (Mini Avaliação Nutricional Reduzida - MNA-SF)",
-             "link": "kffkfgkk",
-             "isInternal": true},
-             {"title": ". Avaliação Subjetiva Global Produzida pelo próprio Paciente (ASG-PPP)",
-             "link": "kffkfgkk",
-             "isInternal": false}
-          ]
-          
-       },
-       {
-          "label": "Avaliação da história clínica e dietética",
-          "content": "Na avaliação nutricional, você deve estar atento ao histórico clínico do paciente. Observar precocemente quais os sinais e sintomas relatados que podem se relacionar com baixo consumo alimentar e, consequentemente, déficit no EN, tais como: xerostomia, mucosite, disfagia, náuseas, vômitos, dispneia, diarreia, constipação, dor e distensão abdominal, saciedade precoce, anorexia, entre outros. \n Além disso, deve coletar informações da história dietética, incluindo: o padrão alimentar global, aversões, preferências e intolerâncias alimentares; número e horário de refeições; apetite; dificuldade na mastigação e deglutição; modificações na consistência dos alimentos; mudanças recentes na prática alimentar e uso de suplementos nutricionais.",
-          "examples": [
-          ]
-          
-       },
-     {
-        "label": "Semiologia nutricional",
-        "content": "O exame físico é de fundamental importância para identificar sinais e sintomas clínicos que nortearão a conduta nutricional individualizada. Em diversas circunstâncias, o exame físico é o único elemento com que o nutricionista pode contar para a realização da intervenção nutricional.",
-        "examples": [
-           {"title": "Avaliação de perda de gordura subcutânea",
-           "link": "kffkfgkk",
-           "isInternal": true},
-           {"title": "Avaliação de perda de massa muscular",
-           "link": "kffkfgkk",
-           "isInternal": true},
-           {"title": "Avaliação do edema",
-           "link": "kffkfgkk",
-           "isInternal": true},
-           {"title": "Classificação da ascite",
-           "link": "kffkfgkk",
-           "isInternal": true}
-
-        ]
-        
-     }
+      }
     ]
   }

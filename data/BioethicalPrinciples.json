@@ -1,0 +1,25 @@
+{
+    "label": "BioethicalPrinciples",
+    "id": "6",
+    "mainTitle": "PRINCÍPIOS DA BIOÉTICA",
+    "subtopics": [
+      {
+        "label": "Autonomia",
+        "content": "Tem como foco o indivíduo e sua capacidade de tomar decisões; \n O paciente tem o direito de questionar seu tratamento e assegurar que o plano terapêutico esteja de acordo com o seu desejo; \n O paciente pode, inclusive, recusar um determinado tratamento depois de bem informado, ainda que esta recusa o leve à morte; \n Quando um paciente se torna incapaz de tomar decisões por conta da evolução da doença ou algum acidente, é importante que os profissionais envolvidos na assistência busquem informações sobre qualquer comunicação previamente expressa pelo paciente a respeito dos tipos de tratamentos desejados."
+      },
+      {
+          "label": "Beneficência",
+          "content": "Diz respeito a minimizar riscos e maximizar benefícios, ou seja, \"fazer o bem\", de modo que o profissional de saúde aja em benefício do paciente, não o expondo a riscos ou sofrimento adicional a menos que haja uma expectativa razoável de benefício proporcional; \n Se os riscos de o suporte nutricional superarem os benefícios, é imperativo suspender o tratamento em questão."  
+       },
+       {
+          "label": "Não-maleficência",
+          "content": "Na assistência a esses pacientes, a aplicação de escalas é um método de avaliação muito utilizado para um resultado personalizado, individual e único. Com pontuações que quantificam e documentam a necessidade de intervenção. Dentre as escalas existentes, a mais utilizada é:"
+          
+       },
+       {
+          "label": "Justiça",
+          "content": "Dispõe sobre a utilização de maneira justa e equitativa dos recursos disponíveis; \n Todo paciente tem garantia de igualdade de direitos, entre eles, o direito concernente aos cuidados com sua saúde, independente de fatores étnicos, sociais e econômicos."       
+       }
+    ]
+  }
+  

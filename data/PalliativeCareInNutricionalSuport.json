@@ -1,0 +1,28 @@
+{
+    "label": "PalliativeCareInNutricionalSuport",
+    "id": "9",
+    "mainTitle": "SUPORTE NUTRICIONAL EM CUIDADOS PALIATIVOS",
+    "explain": "No contexto dos cuidados paliativos, o alívio da dor e o conforto do paciente —  e familiares —  é o importante. A nutrição e alimentação, nesses casos, são aspectos essenciais a serem observados, já que, além de possuir caráter biológico, também apresentam fatores sociais e culturais próprios.",
+    "subtopics": [
+      {
+        "label": "Tomada de decisão em relação à nutrição artificial",
+        "link": ""
+      },
+      {
+          "label": "Indicações de Terapia nutricional em pacientes oncológicos em cuidados paliativos",  
+          "link": ""
+        },
+       {
+          "label": "Terapia Nutricional Oral",
+          "link": ""   
+       },
+       {
+          "label": "Terapia Nutricional Enteral",
+          "link": ""     
+       },
+       {
+        "label": "Terapia Nutricional Parenteral",
+        "link": ""     
+     }]
+  }
+  

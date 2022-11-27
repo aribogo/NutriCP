@@ -13,6 +13,8 @@ import Container from "./Container";
 
 const TransparentButton = (props) => {
 
+  console.log(props.data);
+
   const [selectedId, setSelectedId] = useState(null);
 
   const Item = ({ item, onPress}) => (

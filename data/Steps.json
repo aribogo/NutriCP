@@ -1,13 +1,46 @@
 {
   "stepsTitle": "PASSO A PASSO",
   "buttons": [
-    { "id" : "1", "label": "APRESENTAÇÃO", "screenName": "Presentation", "contentPath": "../../data/Presentation.json" },
     {
-      "id" : "2",
+      "id": "1",
+      "label": "APRESENTAÇÃO",
+      "screenName": "Presentation",
+      "contentPath": "../../data/Presentation.json"
+    },
+    {
+      "id": "2",
       "label": "INSTRUMENTOS DE AVALIAÇÃO",
       "screenName": "AssessmentInstruments",
       "contentPath": "../../data/AssessmentInstrumentInfo.json"
     },
-    { "id" : "3", "label": "AVALIAÇÃO NUTRICIONAL", "screenName": "NutritionalAssessment", "contentPath": "../../data/AssessmentInstrumentInfo.json" }
+    {
+      "id": "3",
+      "label": "AVALIAÇÃO NUTRICIONAL",
+      "screenName": "NutritionalAssessment",
+      "contentPath": "../../data/NutritionalAssessmentInfo.json"
+    },
+    {
+      "id": "4",
+      "label": "MANEJO DE SINTOMAS EM CUIDADOS PALIATIVOS",
+      "screenName": "symptomManagementInPalliativeCare",
+      "contentPath": "../../data/SymptomManagementInPalliativeCareInfo.json"
+    },
+    {
+      "id": "5",
+      "label": "ASPECTOS BIOÉTICOS PARA TOMADA DE DECISÃO",
+      "screenName": "BioethicalAspects",
+      "contentPath": "../../data/BioethicalAspects.json"
+    },
+    {
+      "id": "6",
+      "label": "SUPORTE NUTRICIONAL EM CUIDADOS PALIATIVOS",
+      "screenName": "PalliativeCareInNutricionalSuport",
+      "contentPath": "../../data/PalliativeCareInNutricionalSuport.json"
+    },
+    {
+      "id": "7",
+      "label": "ACOMPANHAMENTO NUTRICIONAL",
+      "screenName": "NutritionalMonitoring"
+    }
   ]
 }

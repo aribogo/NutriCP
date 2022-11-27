@@ -5,6 +5,7 @@ import { scale } from "../../utils/screenResizing";
 
 const FilledButton = (props) => {
   var data = props.data;
+
   return (
     <>
       <Button

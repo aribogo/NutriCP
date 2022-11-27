@@ -15,6 +15,9 @@ import { useNavigation } from '@react-navigation/native';
 const Container = (props) => {
   const navigation = useNavigation(); 
   function ShowExamplesByType(examples) {
+    if(examples === undefined){
+      return(<View></View>)
+    }
     return (
       <View style={stylesContainer.contentText}>
         {examples.map((item, key) =>

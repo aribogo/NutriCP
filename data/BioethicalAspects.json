@@ -7,20 +7,26 @@
       {
         "examples": [
           {
+            "id": 1,
             "title": "PRINCÍPIOS DA BIOÉTICA",
-            "link": "kffkfgkk",
+            "link": "BioethicalPrinciples",
             "isInternal": true
           },
           {
+            "id": 2,
             "title": "ASPECTOS CONSIDERADOS NA TERMINALIDADE",
-            "link": "kffkfgkk",
+            "link": "BioethicalAspectsTopicsScreen",
             "isInternal": true
           },
-          { "title": "AVALIAÇÃO DA CAPACIDADE DE DECISÃO",
-           "link": "kffkfgkk",
+          { 
+            "id": 3,  
+          "title": "AVALIAÇÃO DA CAPACIDADE DE DECISÃO",
+           "link": "BioethicalAspectsTopicsScreen",
            "isInternal": true },
-           { "title": "DIRETIVAS ANTECIPADAS DE VONTADE (DAV)",
-           "link": "kffkfgkk",
+           { 
+            "id": 4, 
+           "title": "DIRETIVAS ANTECIPADAS DE VONTADE (DAV)",
+           "link": "BioethicalAspectsTopicsScreen",
            "isInternal": true }
         ]
       }

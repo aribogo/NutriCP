@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "title": "Aenean leo",
+      "imgUrl": "../../../assets/1"
+    },
+    {
+        "title": "Aenean leo",
+        "imgUrl": "../../../assets/2"
+      },
+      {
+        "title": "Aenean leo",
+        "imgUrl": "../../../assets/3"
+      },
+      {
+        "title": "Aenean leo",
+        "imgUrl": "../../../assets/4"
+      },
+      {
+        "title": "Aenean leo",
+        "imgUrl": "../../../assets/5"
+      },
+      {
+        "title": "Aenean leo",
+        "imgUrl": "../../../assets/6"
+      }
+  ]
+}

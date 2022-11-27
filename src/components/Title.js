@@ -9,8 +9,6 @@ const Title = (props) => {
             <Text style={stylesTitle.baseText}  adjustFontSizeToFit>
             {props.titleName}
             </Text>
-            <View style={stylesTitle.styleDash}>
-            </View>
         </View>
     );
 };

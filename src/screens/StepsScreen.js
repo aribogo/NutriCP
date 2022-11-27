@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { StyleSheet, View, FlatList, TouchableOpacity } from "react-native";
 import Title from "../components/Title";
 import Footer from "../components/Footer";
@@ -6,7 +6,10 @@ import FilledButton from "../components/FilledButton";
 import {
   AssessmentInstrumentInfo,
   NutritionalAssessmentInfo,
-  Presentation
+  Presentation,
+  SymptomManagementInfo,
+  BioethicalAspects,
+  PalliativeCareInNutricionalSuport,
 } from "../../data/jsonParser";
 
 const titleInfo = require("../../data/Steps.json");
@@ -23,6 +26,18 @@ export default function StepsScreen({ navigation }) {
         break;
       case "3":
         jsonData = NutritionalAssessmentInfo;
+        break;
+      case "4":
+        jsonData = SymptomManagementInfo;
+        break;
+      case "5":
+        jsonData = BioethicalAspects;
+        break;
+      case "6":
+        jsonData = PalliativeCareInNutricionalSuport;
+        break;
+      case "7":
+        jsonData = null;
         break;
       default:
         jsonData = AssessmentInstrumentInfo;

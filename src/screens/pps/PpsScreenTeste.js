@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Text, View, ScrollView, StyleSheet } from "react-native";
 import CheckBox from "expo-checkbox";
 import { Button } from "@rneui/base";
@@ -205,12 +205,11 @@ export default function PpsScreen() {
   const [isEnabled, setEnabled] = useState(true);
   const [ppsDTO, setPPSDTO] = useState();
   const [render, setRender] = useState(false);
-  const [comps1, setComps1] = useState();
-  
 
-  useEffect(() => {
+  function onRender() {
     const comps = [];
-    console.log(render);
+
+    if (render === true) {
       if (isEnabled === false) {
         comps.push(
           <ScrollView>
@@ -220,14 +219,9 @@ export default function PpsScreen() {
             </Text>
           </ScrollView>
         );
-        {
-          //() => setRender(false);
-        }
-        setComps1(comps);
-        console.log(comps1);
-        return;
+        setRender(false);
+        return comps;
       }
-
 
       setPPSDTO(
         new PpsDTO(
@@ -248,16 +242,13 @@ export default function PpsScreen() {
               </Text>
             </ScrollView>
           );
-          {
-           // () => setRender(false);
-          }
+          setRender(false);
         }
       });
-    
-    console.log(render);
-    setComps1(comps);
-    console.log(comps1);
-  }, [render]);
+    }
+
+    return comps;
+  }
 
   return (
     <View>
@@ -340,13 +331,13 @@ export default function PpsScreen() {
         type="submit"
         onPress={() => {
           {
-            console.log("Aqui Botão");
-            setRender(!render)};
+            () => setRender(!render);
+          }
         }}
       >
         Calcular
       </Button>
-      {comps1}
+      {onRender()}
     </View>
   );
 }

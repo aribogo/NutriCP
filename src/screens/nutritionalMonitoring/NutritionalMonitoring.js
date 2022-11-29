@@ -1,8 +1,8 @@
 import React,{ useState } from 'react';
-import { View } from "react-native";
+import { View} from "react-native";
 import Carousel from 'react-native-snap-carousel';
 import CarouselCardItem, { SLIDER_WIDTH, ITEM_WIDTH } from './CarouselCards';
-import nutritionalMonitoring from "../../dto/NutritionalMonitoring";
+import Title from "../../components/Title";
 
 const IMAGES = {
   image1: require('../../../assets/photos/1.png'),
@@ -27,8 +27,9 @@ const NutritionalMonitoringScreen = () => {
 
   return (
     <View>
+      <Title titleName={"ACOMPANHAMENTO NUTRICIONAL"} />
       <Carousel
-        layout="tinder"
+        activeSlideAlignment="start"
         layoutCardOffset={9}
         ref={isCarousel}
         data={images}
@@ -36,11 +37,12 @@ const NutritionalMonitoringScreen = () => {
         sliderWidth={SLIDER_WIDTH}
         itemWidth={ITEM_WIDTH}
         inactiveSlideShift={0}
-        useScrollView={true}
       />
     </View>
   )
 }
+
+
 
 
 export default NutritionalMonitoringScreen;

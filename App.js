@@ -13,6 +13,7 @@ import BioethicalPrinciplesScreen from './src/screens/bioethicalAspects/Bioethic
 import BioethicalAspectsTopicsScreen from './src/screens/bioethicalAspects/BioethicalAspectsTopicsScreen';
 import NutritionalSupportInPalliativeCareScreen from './src/screens/nutritionalSupportInPalliativeCare/NutritionalSupportInPalliativeCare';
 import NutritionalMonitoringScreen from './src/screens/nutritionalMonitoring/NutritionalMonitoring';
+import DecisionMakingOnArtificalSupportScreen from './src/screens/nutritionalSupportInPalliativeCare/DecisionMakingOnArtificialSupportScreen';
 import "./i18n.config";
 import PpsScreen from './src/screens/pps/PpsScreen';
 
@@ -116,6 +117,13 @@ function App() {
           }
         }} />
         <Stack.Screen name="Pps" component={PpsScreen} options={{
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+        <Stack.Screen name="DMPalliativeCare" component={DecisionMakingOnArtificalSupportScreen} options={{
           title: 'NutriCP', headerTitleStyle: {
             fontWeight: 'bold',
             color: '#1471AB',

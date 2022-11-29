@@ -36,7 +36,7 @@ const git = [
 
   var results = new Map([
     [
-        label= "Manter a via oral e avaliar a necessidade de terapia nutricionaloral",
+        label= "Manter a via oral e avaliar a necessidade de terapia nutricional oral",
         value= "11",
     ],
       [
@@ -71,16 +71,24 @@ export default function DecisionMakingOnArtificalSupportScreen() {
   
     useEffect(() => {
       const comps = [];
+      console.log("AQUI");
       console.log(render);  
       console.log(gitValue+lifeExpectancyValue);
+     /* console.log(gitValue+lifeExpectancyValue);
+      console.log(value);
+      console.log(JSON.stringify(value.value) === JSON.stringify(gitValue+lifeExpectancyValue)); */
+
+      setResult(gitValue+lifeExpectancyValue);
 
       results.forEach((value, key) => {
-          if (JSON.stringify(value.value) === JSON.stringify(gitValue+lifeExpectancyValue)) {
+        console.log("FOR ##############")
+        console.log(value)
+          if (JSON.stringify(value) === JSON.stringify(gitValue+lifeExpectancyValue)) {
             comps.push(
-              <ScrollView>
-                <Text key={value} style={result}>
-                  {" "}
-                  {value}%{" "}
+              <ScrollView key={key}>
+                <Text style={stylesPPS.resultTitle}>Resultado</Text>
+                <Text key={key} style={stylesPPS.resultText}>
+                  {key}
                 </Text>
               </ScrollView>
             );
@@ -124,7 +132,7 @@ export default function DecisionMakingOnArtificalSupportScreen() {
           type="submit"
           onPress={() => {
             {
-              setResult(gitValue+lifeExpectancyValue)};
+                setRender(!render)};
           }}
         >
           Calcular
@@ -142,7 +150,7 @@ export default function DecisionMakingOnArtificalSupportScreen() {
       textAlign: "left",
       marginLeft: scale(10),
       marginRight: scale(10),
-  
+      marginTop: "5%",
       backgroundColor: "rgba(52, 52, 52, 0)",
     },
     pickerText: {
@@ -190,13 +198,22 @@ export default function DecisionMakingOnArtificalSupportScreen() {
       marginHorizontal: scale(70),
       marginVertical: scale(10),
     },
+    resultTitle: {
+        alignSelf: "center",
+        marginTop: "1%",
+        textAlign: "center",
+        textAlignVertical: "center",
+        color: "#0B3F60",
+        fontWeight: "800",
+        fontSize: scale(25),
+      },
     resultText: {
       alignSelf: "center",
       textAlign: "center",
       textAlignVertical: "center",
       color: "#0B3F60",
-      fontWeight: "bold",
-      fontSize: scale(25),
+      fontWeight: "300",
+      fontSize: scale(20),
     },
   });
   

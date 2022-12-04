@@ -41,6 +41,11 @@
       "id": "7",
       "label": "ACOMPANHAMENTO NUTRICIONAL",
       "screenName": "NutritionalMonitoring"
+    },
+    {
+      "id": "8",
+      "label": "REFERÊNCIAS",
+      "screenName": "Reference"
     }
   ]
 }

@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { scale } from '../../utils/screenResizing';
 
 
+
 const Footer = (props) => {
     const height = props.height;
 

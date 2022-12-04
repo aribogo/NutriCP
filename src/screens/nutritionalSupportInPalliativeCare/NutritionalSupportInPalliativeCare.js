@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, FlatList } from "react-native";
 import Title from "../../components/Title";
 import FilledButton from "../../components/FilledButton";
 import Explain from "../../components/Explain";
+import Footer from "../../components/Footer";
 
 export default function NutritionalSupportInPalliativeCareScreen(props) {
   let data = props.route.params.data;
@@ -30,6 +31,7 @@ export default function NutritionalSupportInPalliativeCareScreen(props) {
         keyExtractor={(subtopic) => subtopic.label}
         nestedScrollEnabled
       />
+      <Footer/>
     </View>
   );
 }

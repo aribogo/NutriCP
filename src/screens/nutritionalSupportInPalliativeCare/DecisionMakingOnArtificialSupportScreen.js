@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Text, View, ScrollView, StyleSheet } from "react-native";
 import CheckBox from "expo-checkbox";
 import { Button } from "@rneui/base";
-import { Picker } from "@react-native-picker/picker";
 import Title from "../../components/Title";
 import { PpsDTO } from "../../dto/PpsDTO";
 import { scale } from "../../../utils/screenResizing";
+import RNPickerSelect from "react-native-picker-select";
 
 const git = [
   {
@@ -40,25 +40,25 @@ const lifeExpectancy = [
 var results = new Map([
   [
     (label =
-      "Manter a via oral e avaliar a necessidade de terapia nutricional oral"),
-    (value = "11")
+      "11"),
+    (value = "Manter a via oral e avaliar a necessidade de terapia nutricional oral")
   ],
   [
     (label =
-      "Manter a via oral e avaliar a necessidade de terapia nutricional oral"),
-    (value = "12"),
+      "12"),
+    (value = "Manter a via oral e avaliar a necessidade de terapia nutricional oral"),
   ],
-  [(label = "Considerar a terapia nutricional enteral"), (value = "21")],
+  [(label = "21"), (value = "Considerar a terapia nutricional enteral")],
   [
     (label =
-      "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa"),
-    (value = "22"),
+      "22"),
+    (value = "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa"),
   ],
-  [(label = "Considerar a terapia nutricional parenteral"), (value = "31")],
+  [(label = "31"), (value = "Considerar a terapia nutricional parenteral")],
   [
     (label =
-      "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa"),
-    (value = "32"),
+      "32"),
+    (value = "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa"),
   ]
 ]);
 
@@ -71,29 +71,19 @@ export default function DecisionMakingOnArtificalSupportScreen() {
 
   useEffect(() => {
     const comps = [];
-    console.log("RENDER");
-    console.log(render);
-    console.log("");
 
-    console.log("VALUE CHOICE");
     setResult(gitValue + lifeExpectancyValue);
-    console.log(result);
-    console.log("");
 
     results.forEach((value, key) => {
-      console.log("FOR ##############");
-      console.log(value);
-      console.log( JSON.stringify(value) === JSON.stringify(result));
-      console.log("");
 
       if (
-        JSON.stringify(value) === JSON.stringify(gitValue + lifeExpectancyValue)
+        JSON.stringify(key) === JSON.stringify(gitValue + lifeExpectancyValue)
       ) {
         comps.push(
           <ScrollView key={key}>
             <Text style={stylesPPS.resultTitle}>Resultado</Text>
             <Text key={key} style={stylesPPS.resultText}>
-              {key}
+              {value}
             </Text>
           </ScrollView>
         );
@@ -104,23 +94,15 @@ export default function DecisionMakingOnArtificalSupportScreen() {
     console.log(render);
   }, [render]);
 
-  return (
-    
-    <View>
-      <Title titleName="TOMADA DE DECISÃO EM RELAÇÃO À NUTRIÇÃO ARTIFICIAL" />
-      <Text style={stylesPPS.title}>Condições do TGI e ingestão alimentar</Text>
-      <Picker
-        selectedValue={gitValue}
-        style={stylesPPS.picker}
-        itemStyle={stylesPPS.pickerText}
-        onValueChange={(itemValue, itemIndex) => setGit(itemValue)}
-      >
-        {git.map((item, key) => (
+  /* 
+  //import { Picker } from "@react-native-picker/picker";
+  {git.map((item, key) => (
           <Picker.Item key={key} label={item.label} value={item.value} />
         ))}
-      </Picker>
-      <Text style={stylesPPS.title}>Expectativa de vida</Text>
-      <Picker
+        selectedValue={gitValue}
+
+
+ <Picker
         selectedValue={lifeExpectancyValue}
         style={stylesPPS.picker}
         itemStyle={stylesPPS.pickerText}
@@ -130,6 +112,23 @@ export default function DecisionMakingOnArtificalSupportScreen() {
           <Picker.Item key={key} label={item.label} value={item.value} />
         ))}
       </Picker>
+
+        */
+
+  return (
+    
+    <View>
+      <Title titleName="TOMADA DE DECISÃO EM RELAÇÃO À NUTRIÇÃO ARTIFICIAL" />
+      <Text style={stylesPPS.title}>Condições do TGI e ingestão alimentar</Text>
+      <RNPickerSelect 
+        
+        style={stylesPPS.picker}
+        items={git}
+        onValueChange={(itemValue, itemIndex) => setGit(itemValue)}
+        useNativeAndroidPickerStyle = {false}
+      />
+      <Text style={stylesPPS.title}>Expectativa de vida</Text>
+     
 
       <Button
         titleStyle={stylesPPS.baseText}
@@ -167,26 +166,19 @@ const stylesPPS = StyleSheet.create({
     textAlign: "left",
     marginRight: scale(10),
     backgroundColor: "rgba(52, 52, 52, 0)",
-    height: scale(40),
-  },
-  pickerText1: {
-    fontSize: scale(15),
-    fontWeight: "light",
-    color: "#0B3F60",
-    textAlign: "left",
-    marginLeft: scale(10),
-    marginRight: scale(10),
-    backgroundColor: "rgba(52, 52, 52, 0)",
-    height: scale(40),
+    height: scale(50),
+    flexWrap: 'wrap',
+     flex: 1
   },
   picker: {
     fontSize: scale(10),
     fontWeight: "light",
     color: "#0B3F60",
     textAlign: "justify",
-    height: scale(40),
+    height: scale(50),
     borderRadius: scale(10),
     marginLeft: scale(5),
+    flexDirection: 'row'
   },
   buttonStyle: {
     backgroundColor: "#7EB4B0",
@@ -208,6 +200,7 @@ const stylesPPS = StyleSheet.create({
   resultTitle: {
     alignSelf: "center",
     marginTop: "1%",
+    marginBottom: "1%",
     textAlign: "center",
     textAlignVertical: "center",
     color: "#0B3F60",

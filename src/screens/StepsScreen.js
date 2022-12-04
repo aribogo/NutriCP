@@ -39,6 +39,8 @@ export default function StepsScreen({ navigation }) {
       case "7":
         jsonData = null;
         break;
+      case "8":
+        jsonData = null;
       default:
         jsonData = AssessmentInstrumentInfo;
     }

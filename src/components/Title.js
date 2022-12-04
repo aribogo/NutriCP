@@ -18,24 +18,23 @@ const stylesTitle = StyleSheet.create({
         backgroundColor: '#1471AB',
         height: moderateScale(90),
         maxWidth: moderateScale(400),
+        marginBottom: "2%",
+        borderBottomWidth: "15%",
+        borderBottomColor: "#7EB4B0",
+        alignItems: 'center',
+        justifyContent: 'center',
+        display: 'flex',
+        paddingHorizontal: '2%'
     },
     baseText: {
-        fontSize: moderateScale(25),
+        fontSize: "26vw",
         fontWeight: 'light',
         color: '#FCFFFF',
         textAlign: 'center',
-        marginTop: moderateScale(10),
         flexWrap: 'wrap'
-      },
-      styleDash: {
-        height: moderateScale(18),
-        maxWidth: moderateScale(400),
-        justifyContent: 'space-between',
-        backgroundColor: '#7EB4B0', 
-        marginTop:  moderateScale(14),
-        bottom: 0,
-    }
+      }
 });
+
 
 
 

@@ -36,29 +36,27 @@ const git = [
 
   var results = new Map([
     [
-        label= "Manter a via oral e avaliar a necessidade de terapia nutricional oral",
-        value= "11",
+      (label =
+        "11"),
+      (value = "Manter a via oral e avaliar a necessidade de terapia nutricional oral")
     ],
-      [
-        label= "Manter a via oral e avaliar a necessidade de terapia nutricional oral",
-        value= "12",
-      ],
-      [
-        label= "Considerar a terapia nutricional enteral",
-        value= "21",
-      ],
-     [
-        label= "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa",
-        value= "22",
-     ],
-      [
-        label= "Considerar a terapia nutricional parenteral",
-        value= "31",
-  ],
-      [
-        label= "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa",
-        value= "32",
-  ],
+    [
+      (label =
+        "12"),
+      (value = "Manter a via oral e avaliar a necessidade de terapia nutricional oral"),
+    ],
+    [(label = "21"), (value = "Considerar a terapia nutricional enteral")],
+    [
+      (label =
+        "22"),
+      (value = "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa"),
+    ],
+    [(label = "31"), (value = "Considerar a terapia nutricional parenteral")],
+    [
+      (label =
+        "32"),
+      (value = "Terapia Nutricional não recomendada. Adotar medidas conservadoras, considerar a hidratação endovenosa"),
+    ]
   ]);
 
 
@@ -71,32 +69,26 @@ export default function DecisionMakingOnArtificalSupportScreen() {
   
     useEffect(() => {
       const comps = [];
-      console.log("AQUI");
-      console.log(render);  
-      console.log(gitValue+lifeExpectancyValue);
-     /* console.log(gitValue+lifeExpectancyValue);
-      console.log(value);
-      console.log(JSON.stringify(value.value) === JSON.stringify(gitValue+lifeExpectancyValue)); */
 
-      setResult(gitValue+lifeExpectancyValue);
+    setResult(gitValue + lifeExpectancyValue);
 
-      results.forEach((value, key) => {
-        console.log("FOR ##############")
-        console.log(value)
-          if (JSON.stringify(value) === JSON.stringify(gitValue+lifeExpectancyValue)) {
-            comps.push(
-              <ScrollView key={key}>
-                <Text style={stylesPPS.resultTitle}>Resultado</Text>
-                <Text key={key} style={stylesPPS.resultText}>
-                  {key}
-                </Text>
-              </ScrollView>
-            );
-          }
-          setComps1(comps);
-        });
-      
-      console.log(render);
+    results.forEach((value, key) => {
+
+      if (
+        JSON.stringify(key) === JSON.stringify(gitValue + lifeExpectancyValue)
+      ) {
+        comps.push(
+          <ScrollView key={key}>
+            <Text style={stylesPPS.resultTitle}>Resultado</Text>
+            <Text key={key} style={stylesPPS.resultText}>
+              {value}
+            </Text>
+          </ScrollView>
+        );
+      }
+      setComps1(comps);
+    });
+
     }, [render]);
   
     return (

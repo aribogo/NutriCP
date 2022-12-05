@@ -4,7 +4,6 @@ import CheckBox from "expo-checkbox";
 import { Button } from "@rneui/base";
 import { Picker } from "@react-native-picker/picker";
 import Title from "../../components/Title";
-import { PpsDTO } from "../../dto/PpsDTO";
 import { scale } from "../../../utils/screenResizing";
 
 
@@ -75,7 +74,7 @@ export default function DecisionMakingOnArtificalSupportScreen() {
     results.forEach((value, key) => {
 
       if (
-        JSON.stringify(key) === JSON.stringify(gitValue + lifeExpectancyValue)
+        JSON.stringify(key) === JSON.stringify(result)
       ) {
         comps.push(
           <ScrollView key={key}>

@@ -14,7 +14,10 @@ import BioethicalAspectsTopicsScreen from './src/screens/bioethicalAspects/Bioet
 import NutritionalSupportInPalliativeCareScreen from './src/screens/nutritionalSupportInPalliativeCare/NutritionalSupportInPalliativeCare';
 import NutritionalMonitoringScreen from './src/screens/nutritionalMonitoring/NutritionalMonitoring';
 import DecisionMakingOnArtificalSupportScreen from './src/screens/nutritionalSupportInPalliativeCare/DecisionMakingOnArtificialSupportScreen';
-import Reference from './src/screens/references/ReferenceScreen'
+import Reference from './src/screens/references/ReferenceScreen';
+import NutritionalSupportIndicationCancerScreen from './src/screens/nutritionalSupportInPalliativeCare/NutritionalSupportIndicationCancerScreen';
+import OralNutritionTerapyScreen from './src/screens/nutritionalSupportInPalliativeCare/OralNutritionTerapyScreen';
+import OralNTQuestionnaire from './src/screens/nutritionalSupportInPalliativeCare/OralNTQuestionnaire';
 import "./i18n.config";
 import PpsScreen from './src/screens/pps/PpsScreen';
 
@@ -132,6 +135,27 @@ function App() {
           }
         }} />
         <Stack.Screen name="Reference" component={Reference} options={{
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+        <Stack.Screen name="NSCancer" component={NutritionalSupportIndicationCancerScreen} options={{
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+        <Stack.Screen name="OralNT" component={OralNutritionTerapyScreen} options={{
+          title: 'NutriCP', headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#1471AB',
+            fontSize: 28,
+          }
+        }} />
+        <Stack.Screen name="OralNTQuestionnaire" component={OralNTQuestionnaire} options={{
           title: 'NutriCP', headerTitleStyle: {
             fontWeight: 'bold',
             color: '#1471AB',

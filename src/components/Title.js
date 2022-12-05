@@ -27,7 +27,7 @@ const stylesTitle = StyleSheet.create({
         paddingHorizontal: '2%'
     },
     baseText: {
-        fontSize: "26vw",
+        fontSize: moderateScale(23),
         fontWeight: 'light',
         color: '#FCFFFF',
         textAlign: 'center',

@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Title from "../../components/Title";
-import Footer from "../../components/Footer";
 import FilledButton from "../../components/FilledButton";
 import Explain from "../../components/Explain";
 
@@ -17,7 +16,6 @@ export default function NutritionalAssessmentScreen(props) {
        screen={"NutritionalAssessment2"}
        data={props.route.params.data}
         />
-      <Footer height="small" />
     </View>
   );
 }

@@ -11,7 +11,7 @@ export default function PresentationScreen(props) {
         style={style.container}
           height={scale(200)}
           play={false}
-          videoId={"HNBCVM4KbUM"}
+          videoId={"KB-CioDne20"}
         />
       </View>
       <></>

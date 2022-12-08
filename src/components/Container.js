@@ -9,25 +9,28 @@ import { scale } from "../../utils/screenResizing";
 import * as FileSystem from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { Button } from "@rneui/base";
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
+import { Icon } from "@rneui/base";
 
+/*<Button key={key}
+title={item.title}
+onPress={() => {
+  navigation.navigate(item.link);
+}}
+style={stylesContainer.buttonStyle}
+></Button>*/
 
 const Container = (props) => {
-  const navigation = useNavigation(); 
+  const navigation = useNavigation();
   function ShowExamplesByType(examples) {
-    if(examples === undefined){
-      return(<View></View>)
+    if (examples === undefined) {
+      return <View></View>;
     }
     return (
       <View style={stylesContainer.contentText}>
         {examples.map((item, key) =>
           item.isInternal === true ? (
-            <Button key={key}
-            title={item.title}
-            onPress={() => {
-              navigation.navigate(item.link);
-            }}
-            ></Button>
+            <></>
           ) : (
             <TouchableOpacity
               key={key}
@@ -35,7 +38,14 @@ const Container = (props) => {
                 download(item.link, "teste.pdf");
               }}
             >
-              <Text key={key}>Download {item.title}</Text>
+              <Icon
+                type="font-awesome"
+                class="fa-regular fa-file-pdf"
+              />
+              <Text key={key} style={stylesContainer.contentText}>
+                {" "}
+                {item.title}
+              </Text>
             </TouchableOpacity>
           )
         )}
@@ -69,6 +79,10 @@ const stylesContainer = StyleSheet.create({
     textAlign: "justify",
     marginLeft: scale(10),
     marginRight: scale(10),
+  },
+  buttonStyle: {
+    backgroundColor: "white",
+    color: "black",
   },
 });
 

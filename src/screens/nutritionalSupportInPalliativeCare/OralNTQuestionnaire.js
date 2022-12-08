@@ -18,8 +18,8 @@ const yesOrNo = [
 ];
 
 export default function OralNTQuestionnaire() {
-  const [GITIntact, setGITIntact] = useState("yes");
-  const [weightLoss, setWeightLoss] = useState("yes");
+  const [GITIntact, setGITIntact] = useState("");
+  const [weightLoss, setWeightLoss] = useState("");
   const [render, setRender] = useState(false);
   const [render2, setRender2] = useState(false);
   const [firstResult, setfirstResult] = useState();
@@ -27,7 +27,8 @@ export default function OralNTQuestionnaire() {
 
   useEffect(() => {
     const comps = [];
-
+    console.log("AQIO")
+    console.log(GITIntact)
     if (JSON.stringify(GITIntact) === JSON.stringify("no")) {
       comps.push(
         <ScrollView>
@@ -135,6 +136,21 @@ export default function OralNTQuestionnaire() {
       </Button>
       {firstResult}
       {finalResult}
+      <Button
+        titleStyle={stylesPPS.baseText}
+        buttonStyle={stylesPPS.buttonStyle}
+        containerStyle={stylesPPS.containerStyle}
+        type="submit"
+        onPress={() => {
+          {
+            setGITIntact("");
+            setWeightLoss("");
+            setRender(!render);
+          }
+        }}
+      >
+        resetar
+      </Button>
     </View>
   );
 }
